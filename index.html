@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Justo a Tiempo (ATHLEON)</title>
+  <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+  <header>
+    <h1>Gestión Justo a Tiempo</h1>
+  </header>
+  <main>
+    <section id="registro-prendas">
+      <h2>Registrar Prenda</h2>
+      <form id="form-prenda">
+        <label for="nombre-prenda">Nombre de la Prenda:</label>
+        <input type="text" id="nombre-prenda" name="nombre-prenda" required>
+
+        <label for="fecha">Fecha de Entrega:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="dueno">Nombre del Dueño:</label>
+        <input type="text" id="dueno" name="dueno" required>
+
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <button type="submit">Agregar Prenda</button>
+      </form>
+    </section>
+
+    <section id="lista-prendas">
+      <h2>Prendas Pendientes</h2>
+      <ul id="prendas-pendientes"></ul>
+    </section>
+
+    <section id="prendas-terminadas">
+      <h2>Prendas Terminadas</h2>
+      <ul id="prendas-listas"></ul>
+    </section>
+  </main>
+  <script src="tienda.js"></script>
+</body>
+</html>
